@@ -9,11 +9,11 @@ const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
     {title && <h2 className={styles.title}>{title}</h2>}
 
-    <ul className={styles.stat_list}>
+    <ul className={styles['stat-list']}>
       {stats.map(({ id, label, percentage }) => (
         <li
-          className={styles.item}
           key={id}
+          className={styles.item}
           style={{
             backgroundColor: getRandomHexColor(),
           }}
