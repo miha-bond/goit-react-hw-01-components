@@ -1,10 +1,39 @@
 .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+
+  background-color: aliceblue;
+  border-radius: 7px;
+}
+.item:last-child {
+  margin-bottom: 0;
 }
 .online {
+  content: '';
+  width: 10px;
+  height: 10px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: green;
 }
 .offline {
+  content: '';
+  width: 10px;
+  height: 10px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
 }
 .avatar {
+  margin-left: 10px;
+  border-radius: 7px;
+  background-color: darkolivegreen;
 }
 .name {
+  margin-left: 15px;
+  font-weight: 700;
 }
